@@ -9,7 +9,7 @@ import Redirection from "./components/shared/Redirection/Redirection";
 
 const router = createBrowserRouter([
   {
-    path: "/EcoFuture/",
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/EcoFuture/auth",
+    path: "/auth",
     element: <AuthLayout />,
     children: [
       {
