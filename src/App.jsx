@@ -43,9 +43,7 @@ const router = createBrowserRouter([
     ]
     
   }
-],{
-  basename: "/EcoFuture"
-});
+]);
 
 function App() {
   return (
