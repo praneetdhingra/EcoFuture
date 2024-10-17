@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="bg-black text-white w-full px-4 py-2 md:px-10 shadow-md fixed top-0 z-50 text-sm">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link to={"/"}>
+        <Link to={"/EcoFuture/"}>
           <div className="flex items-center space-x-2">
             <span className="font-bold text-xl text-white">
               plan<span className="text-gray-500">A</span>
@@ -48,10 +48,10 @@ const Navbar = () => {
                 onMouseEnter={() => toggleDropdown('product', true)}
                 onMouseLeave={() => toggleDropdown('product', false)}
               >
-                <Link to="/redirection" className="block hover:text-gray-500">Mission</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500">Sustainability Initiative</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500">Careers</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500">Press</Link>
+                <Link to="/EcoFuture/redirection" className="block hover:text-gray-500">Mission</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500">Sustainability Initiative</Link>
+                <Link to="/EcoFuture//redirection"  className="block hover:text-gray-500">Careers</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500">Press</Link>
               </div>
             )}
           </li>
@@ -70,8 +70,8 @@ const Navbar = () => {
                 onMouseEnter={() => toggleDropdown('solutions', true)}
                 onMouseLeave={() => toggleDropdown('solutions', false)}
               >
-                <Link to="/redirection" className="block hover:text-gray-500">Partners</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500">Join Plan A</Link>
+                <Link to="/EcoFuture/redirection" className="block hover:text-gray-500">Partners</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500">Join Plan A</Link>
               </div>
             )}
           </li>
@@ -90,8 +90,8 @@ const Navbar = () => {
                 onMouseEnter={() => toggleDropdown('aboutUs', true)}
                 onMouseLeave={() => toggleDropdown('aboutUs', false)}
               >
-                <Link to="/redirection"  className="block hover:text-gray-500">Sustainability</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500">Partners</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500">Sustainability</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500">Partners</Link>
               </div>
             )}
           </li>
@@ -100,12 +100,12 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <Link to={"auth/signin"}>
+          <Link to="/EcoFuture/auth/signin">
             <button className="font-bold bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-[#173f31] transition">
               Log in
             </button>
           </Link>
-          <Link to="/redirection">
+          <Link to="/EcoFuture/redirection">
           <button className="font-bold bg-white text-black px-6 py-2 border border-white rounded hover:bg-black hover:text-white transition">
             Schedule a call
           </button>
@@ -130,10 +130,10 @@ const Navbar = () => {
             </button>
             {isDropdownOpen.product && (
               <div className="pl-4 space-y-2">
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Mission</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Sustainability Initiative</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Careers</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Press</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Mission</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Sustainability Initiative</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Careers</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Press</Link>
               </div>
             )}
           </div>
@@ -143,8 +143,8 @@ const Navbar = () => {
             </button>
             {isDropdownOpen.solutions && (
               <div className="pl-4 space-y-2">
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Partners</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Join Plan A</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Partners</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Join Plan A</Link>
               </div>
             )}
           </div>
@@ -154,8 +154,8 @@ const Navbar = () => {
             </button>
             {isDropdownOpen.aboutUs && (
               <div className="pl-4 space-y-2">
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Sustainability</Link>
-                <Link to="/redirection"  className="block hover:text-gray-500 px-3">Partners</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Sustainability</Link>
+                <Link to="/EcoFuture/redirection"  className="block hover:text-gray-500 px-3">Partners</Link>
               </div>
             )}
           </div>
