@@ -43,12 +43,14 @@ const router = createBrowserRouter([
     ]
     
   }
-]);
+],{
+  basename: "/EcoFuture"
+});
 
 function App() {
   return (
     <div className="min-h-screen">
-      <RouterProvider router={router} />
+      <RouterProvider router={router}  />
     </div>
   );
 }
