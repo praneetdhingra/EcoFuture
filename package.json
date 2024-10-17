@@ -1,6 +1,6 @@
-{ "homepage": "https://Abhikanade17112002/github.io/EcoFuture/",
+{ "homepage": "https://Abhikanade17112002.github.io/EcoFuture/",
   "name": "ecofuture",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
