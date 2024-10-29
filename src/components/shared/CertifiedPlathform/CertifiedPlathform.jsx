@@ -4,7 +4,7 @@ import React from 'react';
 
 const CertifiedPlatform = () => {
   return (
-    <div className="w-full bg-[#f7f4eb] py-12">
+    <div className="w-full bg-white py-12">
       <div className="bg-white border border-black  py-8 md:px-16 px-4  mx-auto max-w-5xl">
       <div className="w-full lg:flex justify-between">
         {/* Grid Layout for Text and Marquee */}

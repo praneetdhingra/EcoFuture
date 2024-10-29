@@ -68,7 +68,7 @@ const ClientShowcase = () => {
   };
 
   return (
-    <div className="py-16 px-16 bg-[#f9f7f2]">
+    <div className="py-16 px-16 bg-white">
       <Carousel
         opts={{
           align: "start",

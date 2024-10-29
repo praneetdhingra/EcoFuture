@@ -32,7 +32,7 @@ const ResourcesSection = () => {
     ];
   
     return (
-      <section className="bg-[#f7f4eb] py-10">
+      <section className="bg-white py-10">
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mb-6">

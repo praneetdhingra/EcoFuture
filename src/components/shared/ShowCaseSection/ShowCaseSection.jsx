@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const ShowCaseSection = () => {
   return (
-    <div className="py-6 px-8 bg-[#f9f7f2]">
+    <div className="py-6 px-8 bg-white">
          <section className="py-16 text-white">
       {/* Top Section */}
       <div className="text-center mb-12">
