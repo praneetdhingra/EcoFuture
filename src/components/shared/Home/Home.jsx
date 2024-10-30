@@ -15,14 +15,14 @@ const Home = () => {
   return (
     <div>
     <HeroSection/>
-    <MarqueeDemo/>
+    {/* <MarqueeDemo/> */}
     <HeroVideoDialogDemo></HeroVideoDialogDemo>
     <NetZeroJourney></NetZeroJourney>
-    <CertifiedPlatform></CertifiedPlatform>
+    {/* <CertifiedPlatform></CertifiedPlatform> */}
    <DecarbonisationStats></DecarbonisationStats>
    <ScrollSpyComponent/>
    <ShowCaseSection></ShowCaseSection>
-   <ClientShowcase></ClientShowcase>
+   {/* <ClientShowcase></ClientShowcase> */}
    <DecarboniseSection></DecarboniseSection>
    <ResourcesSection></ResourcesSection>
     </div>

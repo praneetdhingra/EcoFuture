@@ -4,7 +4,7 @@ import React from 'react';
 
 const NetZeroJourney = () => {
   return (
-    <div className="bg-[#f5f2ea] min-h-screen p-4 flex items-center justify-center">
+    <div className="bg-white min-h-screen p-4 flex items-center justify-center">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* Left Section */}
         <div className="space-y-6 flex flex-col justify-between h-full">

@@ -35,11 +35,11 @@ const ScrollSpyComponent = () => {
   }, []);
 
   return (
-    <div className=" py-[100px] bg-[#f9f7f2]">
+    <div className=" py-[100px] bg-white">
     <div className=" max-w-5xl flex  flex-col   mx-auto ">
       {/* Navigation Bar */}
-      <nav className="bg-white  border border-black rounded-xl top-14 sticky  z-40 w-full flex justify-center py-4 flex-wrap px-2  ">
-        <ul className={`py-4  border border-black rounded-xl font-semibold w-[800px]  px-4  grid sm:grid-cols-4 gap-2 grid-cols-2  `}>
+      <nav className="   rounded-xl top-10 sticky  z-40 w-full flex justify-center py-4 flex-wrap px-2  ">
+        <ul className={`py-4  bg-gray-100  shadow-2xl rounded-xl font-semibold w-[800px]  px-4  grid sm:grid-cols-4 gap-2 grid-cols-2  `}>
           
           <li className={`text-[10px] sm:text-sm py-2 px-4 border border-black text-black rounded-xl my-2 text-center  ${getClassNames('section1')} `} >
             <div to="section1" smooth={true} spy={true} className={`${getClassNames('section1')} w-full`}>
@@ -77,7 +77,7 @@ const ScrollSpyComponent = () => {
 
 
 <div className="my-8 text-sm">
-<section id="section1" className=" flex justify-center items-center py-16 bg-[#f9f7f2]">
+<section id="section1" className=" flex justify-center items-center py-16 bg-white">
   <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg">
     {/* Left Column */}
     <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
@@ -120,7 +120,7 @@ const ScrollSpyComponent = () => {
   </div>
 </section>
 
-<section id="section2" className=" flex  justify-center items-center py-12 bg-[#f9f7f2]">
+<section id="section2" className=" flex  justify-center items-center py-12 bg-white">
   <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg">
     {/* Left Column */}
     <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
@@ -163,7 +163,7 @@ const ScrollSpyComponent = () => {
   </div>
 </section>
 
-<section id="section3" className=" flex justify-center items-center py-12 bg-[#f9f7f2]">
+<section id="section3" className=" flex justify-center items-center py-12 bg-white">
   <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg">
     {/* Left Column */}
     <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
@@ -206,7 +206,7 @@ const ScrollSpyComponent = () => {
   </div>
 </section>
 
-<section id="section4" className=" flex justify-center items-center py-12 bg-[#f9f7f2]">
+<section id="section4" className=" flex justify-center items-center py-12 bg-white">
   <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg">
     {/* Left Column */}
     <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">

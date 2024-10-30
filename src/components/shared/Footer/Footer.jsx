@@ -1,11 +1,7 @@
 import React from 'react';
-import planA from "../../../assets/planA.svg"
+import { FaPhoneAlt } from "react-icons/fa";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import AICPA from "../../../assets/AICPA.webp" ;
-import trustLogo from "../../../assets/trustLogo.webp" ;
-import bestofworld from "../../../assets/bestofworld.webp" ;
-import certifiedB from "../../../assets/certifiedB.webp" ;
-import TUV from "../../../assets/TUV.webp" ;
+import { MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
 
@@ -16,30 +12,35 @@ const Footer = () => {
         {/* Footer Top Section */}
         <div className="grid md:grid-cols-5 grid-cols-2  ">
           {/* Logo */}
-          <div className="w-full px-2">
-          <img src={planA} alt="" />
+          <Link to="/">
+          <div className="flex items-center space-x-2 ">
+            <span className="font-bold text-xl text-white">
+              Eco<span className="text-gray-500">Future</span>
+            </span>
           </div>
+        </Link>
 
           {/* Product Column */}
           <div className=" px-2">
             <h3 className="text-white mb-4 font-semibold">Product</h3>
             <ul className="space-y-2 text-sm flex flex-col">
-              <Link  to="/EcoFuture/redirection" >Product overview</Link>
-              <Link to="/EcoFuture/redirection" >Collect data</Link>
-              <Link to="/EcoFuture/redirection" >Measure emissions</Link>
-              <Link to="/EcoFuture/redirection" >Report on ESG</Link>
-              <Link to="/EcoFuture/redirection" >Set targets</Link>
-              <Link to="/EcoFuture/redirection" >Reduce carbon</Link>
-              <Link to="/EcoFuture/redirection" >Improve strategy</Link>
+              <Link  to="/redirection" >Product overview</Link>
+              <Link to="/redirection" >Collect data</Link>
+              <Link to="/redirection" >Measure emissions</Link>
+              <Link to="/redirection" >Report on ESG</Link>
+              <Link to="/redirection" >Set targets</Link>
+              <Link to="/redirection" >Reduce carbon</Link>
+              <Link to="/redirection" >Improve strategy</Link>
             </ul>
           </div>
 
-          {/* Solutions Column */}
-          <div className="px-2">
-            <h3 className="text-white mb-4 font-semibold">Solutions</h3>
-            <ul className="space-y-2 text-sm flex flex-col">
-              <Link to="/EcoFuture/redirection" >Offerings</Link>
-              <Link to="/EcoFuture/redirection" >CSRD</Link>
+          {/* Contact US Column */}
+          <div className="w-full  ">
+            <h3 className="px-2 text-white font-semibold mb-4 text-start">Contact Us</h3>
+            <ul className="px-2 text-sm space-y-2 flex justify-center flex-col items-center  ">
+              <Link to="/redirection"  className="w-full text-start"><div className="flex gap-2 justify-start items-center"><span><MdEmail/></span> <span>examplemail@gmail.com</span> </div></Link>
+              <Link to="/redirection"  className="w-full text-start"><div className="flex gap-2 justify-start items-center"><span><FaPhoneAlt/></span> <span>+91 0000000000</span> </div></Link>
+              
             </ul>
           </div>
 
@@ -47,10 +48,10 @@ const Footer = () => {
           <div className=" px-2">
             <h3 className="text-white mb-4 font-semibold">About us</h3>
             <ul className="space-y-2 text-sm flex flex-col">
-              <Link to="/EcoFuture/redirection" >Mission</Link>
-              <Link to="/EcoFuture/redirection" >Careers</Link>
-              <Link to="/EcoFuture/redirection" >Press</Link>
-              <Link to="/EcoFuture/redirection" >Sustainability Initiative</Link>
+              <Link to="/redirection" >Mission</Link>
+              <Link to="/redirection" >Sustainability Initiative</Link>
+              <Link to="/redirection" >Offerings</Link>
+              <Link to="/redirection" >CSRD</Link>
             </ul>
           </div>
 
@@ -58,15 +59,24 @@ const Footer = () => {
           <div className=" px-2 ">
             <h3 className="text-white mb-4 font-semibold">Resources</h3>
             <ul className="space-y-2 text-sm flex flex-col">
-              <Link to="/EcoFuture/redirection" >Academy</Link>
-              <Link to="/EcoFuture/redirection" >Whitepaper centre</Link>
-              <Link to="/EcoFuture/redirection" >Regulation centre</Link>
-              <Link to="/EcoFuture/redirection" >Online courses</Link>
-              <Link to="/EcoFuture/redirection" >Carbon scanner</Link>
-              <Link to="/EcoFuture/redirection" >Corporate sustainability glossary</Link>
-              <Link to="/EcoFuture/redirection" >Events Hub</Link>
-              <Link to="/EcoFuture/redirection" >Best carbon accounting software</Link>
-              <Link to="/EcoFuture/redirection" >All articles</Link>
+            <Link to="/redirection" className="block hover:text-gray-500">
+                  Glossary
+                </Link>
+                <Link to="/redirection" className="block hover:text-gray-500">
+                  Carbon Accounting
+                </Link>
+                <Link to="/redirection" className="block hover:text-gray-500">
+                  Carbon Insetting
+                </Link>
+                <Link to="/redirection" className="block hover:text-gray-500">
+                  Decarbonisation
+                </Link>
+                <Link to="/redirection" className="block hover:text-gray-500">
+                  Environment, Social, Governance (ESG)
+                </Link>
+                <Link to="/redirection" className="block hover:text-gray-500">
+                  Scope 3 emissions
+                </Link>
             </ul>
           </div>
         </div>
@@ -74,7 +84,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="mt-10 flex justify-evenly  flex-wrap space-y-8 md:space-y-0">
           {/* Certifications */}
-          <div className="w-full md:w-1/2 text-center">
+          {/* <div className="w-full md:w-1/2 text-center">
             <h3 className="text-white font-semibold mb-4">Certifications & Awards</h3>
             <div className="flex  flex-wrap justify-evenly items-center">
               <img src={TUV} alt="certification" className="h-[60px]  " />
@@ -83,18 +93,10 @@ const Footer = () => {
               <img src={AICPA} alt="certification" className="h-[60px]  " />
 
             </div>
-          </div>
+          </div> */}
 
           {/* Offices */}
-          <div className="w-full md:w-1/2 ">
-            <h3 className="text-white font-semibold mb-4 text-center">Offices</h3>
-            <ul className="text-sm space-y-2 flex justify-center flex-col items-center flex flex-col ">
-              <Link to="/EcoFuture/redirection"  className="w-full text-center"><div className="w-full"><h2>Paris </h2><h4>24 Rue de Mogador, 75009 Paris</h4></div></Link>
-              <Link to="/EcoFuture/redirection"  className="w-full text-center"><div className=""> <h2>London</h2><h4>86–90 Paul Street, EC2A 4NE</h4> </div></Link>
-              <Link to="/EcoFuture/redirection"  className="w-full text-center"><div className=""> <h2>Berlin</h2>  <h4>Schlesische Strasse 26, 10997 Berlin</h4></div></Link>
-              <Link to="/EcoFuture/redirection"  className="w-full text-center"><div className=""> <h2>Munich</h2>  <h4>Rosental 7, 80331 Munich</h4></div></Link>
-            </ul>
-          </div>
+         
         </div>
         <div className="py-4">
           <hr />
